@@ -1,0 +1,19 @@
+/* Main Content */
+.main-content {
+  margin-top: 64px; /* Height of the navbar */
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+/* Responsive Design for Main Content */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 12px;
+  }
+}

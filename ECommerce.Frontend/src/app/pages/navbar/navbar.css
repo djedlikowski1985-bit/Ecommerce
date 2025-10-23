@@ -1,0 +1,92 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar mat-toolbar-row {
+  height: 64px;
+  padding: 0 16px;
+}
+
+/* Brand/Logo */
+.brand-logo {
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+.logo-image:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-links button {
+  color: rgb(22, 22, 22);
+  font-weight: 500;
+}
+
+.nav-links button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Spacer to push content to right */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* User Actions */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-actions button {
+  color: rgb(22, 22, 22);
+}
+
+.user-actions mat-icon {
+  margin-right: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .brand-logo {
+    margin-right: 16px;
+  }
+  
+  .logo-image {
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar mat-toolbar-row {
+    padding: 0 8px;
+  }
+  
+  .user-actions button span {
+    display: none;
+  }
+}
