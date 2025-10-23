@@ -5,7 +5,8 @@
       <img src="ecommerce-logo.svg" alt="E-Commerce" class="logo-image" routerLink="/">
     </div>
     
-    <div class="nav-links">
+    <!-- Desktop Navigation Links -->
+    <div class="nav-links desktop-nav">
       <button mat-button routerLink="/">Home</button>
       <button mat-button routerLink="/products">Products</button>
       <button mat-button routerLink="/categories">Categories</button>
@@ -14,8 +15,8 @@
     
     <span class="spacer"></span>
     
-    <div class="user-actions">
-
+    <!-- Desktop User Actions -->
+    <div class="user-actions desktop-actions">
       <button mat-icon-button aria-label="Shopping cart">
         <mat-icon>shopping_cart</mat-icon>
       </button>
@@ -35,7 +36,54 @@
           Logout
         </button>
       </mat-menu>
-
     </div>
+
+    <!-- Mobile User Actions -->
+    <div class="mobile-actions">
+      <button mat-icon-button aria-label="Shopping cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+      
+      <button mat-icon-button 
+              class="menu-toggle" 
+              (click)="toggleMobileMenu()" 
+              aria-label="Toggle navigation menu">
+        <mat-icon>{{ isMobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
+      </button>
+    </div>
+
   </mat-toolbar-row>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-nav" [class.mobile-nav-open]="isMobileMenuOpen">
+    <div class="mobile-nav-content">
+      <button mat-button routerLink="/" (click)="closeMobileMenu()">
+        <mat-icon>home</mat-icon>
+        Home
+      </button>
+      <button mat-button routerLink="/products" (click)="closeMobileMenu()">
+        <mat-icon>shopping_bag</mat-icon>
+        Products
+      </button>
+      <button mat-button routerLink="/categories" (click)="closeMobileMenu()">
+        <mat-icon>category</mat-icon>
+        Categories
+      </button>
+      <button mat-button routerLink="/about" (click)="closeMobileMenu()">
+        <mat-icon>info</mat-icon>
+        About
+      </button>
+      
+      <mat-divider></mat-divider>
+      
+      <button mat-button (click)="closeMobileMenu()">
+        <mat-icon>person</mat-icon>
+        Profile
+      </button>
+      <button mat-button (click)="closeMobileMenu()">
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+    </div>
+  </div>
 </mat-toolbar>
