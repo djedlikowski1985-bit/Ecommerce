@@ -88,6 +88,9 @@ D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\OpenTelemetry.Instrumentatio
 D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\Polly.Core.dll
 D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\Polly.Extensions.dll
 D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\Polly.RateLimiting.dll
+D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\ECommerce.ServiceDefaults.dll
 D:\ECommerce\ECommerce.ApiService\bin\Debug\net10.0\ECommerce.ServiceDefaults.pdb
 D:\ECommerce\ECommerce.ApiService\obj\Debug\net10.0\ECommerce.ApiService.csproj.AssemblyReference.cache

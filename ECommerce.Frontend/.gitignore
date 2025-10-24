@@ -41,3 +41,22 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore build output folders across the repo (case-insensitive)
+**/[Bb]in/
+**/[Oo]bj/
+
+# Ignore Debug folders (case-insensitive)
+**/[Dd]ebug/
+
+# Visual Studio and user files
+.vs/
+*.user
+*.suo
+
+# Optional: NuGet packages
+*.nupkg
+packages/
+
+# Optional: JetBrains
+*.dotCover

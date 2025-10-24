@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wJX0EKCi1fY=",
+  "dgSpecHash": "QUT/W/Q1QO0=",
   "success": true,
   "projectFilePath": "D:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
   "expectedPackageFiles": [
@@ -67,7 +67,12 @@
     "C:\\Users\\danie\\.nuget\\packages\\streamjsonrpc\\2.22.11\\streamjsonrpc.2.22.11.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.9\\system.diagnostics.eventlog.9.0.9.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\system.io.hashing\\9.0.8\\system.io.hashing.9.0.8.nupkg.sha512",
-    "C:\\Users\\danie\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+    "C:\\Users\\danie\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.9\\microsoft.windowsdesktop.app.ref.9.0.9.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.9\\microsoft.netcore.app.ref.9.0.9.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.9\\microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.9\\microsoft.netcore.app.host.win-x64.9.0.9.nupkg.sha512"
   ],
   "logs": []
 }
