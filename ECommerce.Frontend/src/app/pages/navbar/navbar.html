@@ -21,7 +21,8 @@
         <mat-icon>shopping_cart</mat-icon>
       </button>
       
-      <button mat-button [matMenuTriggerFor]="userMenu">
+      <!-- Logged In User Menu -->
+      <button mat-button [matMenuTriggerFor]="userMenu" *ngIf="isLoggedIn">
         <mat-icon>account_circle</mat-icon>
         Account
       </button>
@@ -31,11 +32,17 @@
           <mat-icon>person</mat-icon>
           Profile
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item (click)="onLogout()">
           <mat-icon>logout</mat-icon>
           Logout
         </button>
       </mat-menu>
+
+      <!-- Login Button for Not Logged In Users -->
+      <button mat-button (click)="onLogin()" *ngIf="!isLoggedIn">
+        <mat-icon>login</mat-icon>
+        Login
+      </button>
     </div>
 
     <!-- Mobile User Actions -->
@@ -76,13 +83,22 @@
       
       <mat-divider></mat-divider>
       
-      <button mat-button (click)="closeMobileMenu()">
-        <mat-icon>person</mat-icon>
-        Profile
-      </button>
-      <button mat-button (click)="closeMobileMenu()">
-        <mat-icon>logout</mat-icon>
-        Logout
+      <!-- Logged In User Options -->
+      <ng-container *ngIf="isLoggedIn">
+        <button mat-button (click)="closeMobileMenu()">
+          <mat-icon>person</mat-icon>
+          Profile
+        </button>
+        <button mat-button (click)="onLogout()">
+          <mat-icon>logout</mat-icon>
+          Logout
+        </button>
+      </ng-container>
+
+      <!-- Login Option for Not Logged In Users -->
+      <button mat-button (click)="onLogin()" *ngIf="!isLoggedIn">
+        <mat-icon>login</mat-icon>
+        Login
       </button>
     </div>
   </div>

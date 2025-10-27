@@ -1,0 +1,148 @@
+/* Login Dialog Styles */
+.login-dialog {
+  width: 100%;
+  max-width: 450px;
+  min-width: 350px;
+}
+
+.login-dialog h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-weight: 500;
+  color: #1976d2;
+}
+
+.login-dialog h2 mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.name-fields {
+  display: flex;
+  gap: 16px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.checkbox-container {
+  margin: 8px 0;
+}
+
+/* Dialog Actions */
+.dialog-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.mode-toggle button {
+  padding: 0;
+  min-width: auto;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.action-buttons button {
+  min-width: 100px;
+}
+
+.action-buttons button mat-icon {
+  margin-right: 4px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Form Field Customization */
+mat-form-field {
+  margin-bottom: 8px;
+}
+
+mat-form-field mat-icon[matSuffix] {
+  color: #666;
+  cursor: pointer;
+}
+
+mat-form-field button[matSuffix] {
+  border: none;
+  background: none;
+  color: #666;
+}
+
+mat-form-field button[matSuffix]:hover {
+  color: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-dialog {
+    min-width: 280px;
+    max-width: 90vw;
+  }
+  
+  .name-fields {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .action-buttons {
+    justify-content: stretch;
+  }
+  
+  .action-buttons button {
+    flex: 1;
+  }
+  
+  .dialog-actions {
+    gap: 12px;
+  }
+}
+
+/* Animation for mode toggle */
+.name-fields,
+.checkbox-container {
+  animation: fadeInSlide 0.3s ease-in-out;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

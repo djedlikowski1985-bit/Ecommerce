@@ -1,0 +1,101 @@
+<div class="login-dialog">
+  <h2 mat-dialog-title>
+    <mat-icon>{{ isRegistering ? 'person_add' : 'login' }}</mat-icon>
+    {{ isRegistering ? 'Create Account' : 'Sign In' }}
+  </h2>
+
+  <mat-dialog-content>
+    <form [formGroup]="loginForm" class="login-form">
+      
+      <!-- Registration Fields (shown only when registering) -->
+      <div class="name-fields" *ngIf="isRegistering">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" placeholder="Enter your first name">
+          <mat-error *ngIf="loginForm.get('firstName')?.invalid && loginForm.get('firstName')?.touched">
+            First name is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName" placeholder="Enter your last name">
+          <mat-error *ngIf="loginForm.get('lastName')?.invalid && loginForm.get('lastName')?.touched">
+            Last name is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Email Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" placeholder="Enter your email">
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+          {{ getEmailErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Password Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput 
+               [type]="hidePassword ? 'password' : 'text'" 
+               formControlName="password" 
+               placeholder="Enter your password">
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
+          <mat-icon>{{ hidePassword ? 'visibility' : 'visibility_off' }}</mat-icon>
+        </button>
+        <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+          {{ getPasswordErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Confirm Password Field (shown only when registering) -->
+      <mat-form-field appearance="outline" class="full-width" *ngIf="isRegistering">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" formControlName="confirmPassword" placeholder="Confirm your password">
+        <mat-icon matSuffix>lock</mat-icon>
+        <mat-error *ngIf="loginForm.get('confirmPassword')?.invalid && loginForm.get('confirmPassword')?.touched">
+          {{ getConfirmPasswordErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Remember Me Checkbox (shown only when logging in) -->
+      <div class="checkbox-container" *ngIf="!isRegistering">
+        <mat-checkbox formControlName="rememberMe">
+          Remember me
+        </mat-checkbox>
+      </div>
+
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <div class="dialog-actions">
+      <!-- Mode Toggle Link -->
+      <div class="mode-toggle">
+        <span *ngIf="!isRegistering">Don't have an account?</span>
+        <span *ngIf="isRegistering">Already have an account?</span>
+        <button mat-button color="primary" type="button" (click)="toggleMode()">
+          {{ isRegistering ? 'Sign In' : 'Create Account' }}
+        </button>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button mat-button type="button" (click)="onCancel()">
+          Cancel
+        </button>
+        <button mat-raised-button 
+                color="primary" 
+                type="submit" 
+                (click)="onSubmit()"
+                [disabled]="loginForm.invalid">
+          <mat-icon>{{ isRegistering ? 'person_add' : 'login' }}</mat-icon>
+          {{ isRegistering ? 'Create Account' : 'Sign In' }}
+        </button>
+      </div>
+    </div>
+  </mat-dialog-actions>
+</div>
