@@ -18,15 +18,15 @@ using System.Reflection;
     "xt\\")]
 [assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5.0\\tools\\e" +
     "xt\\bin\\")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "D:\\ECommerce\\ECommerce.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "E:\\ECommerce\\ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "ECommerce.AppHost.csproj")]
 [assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Users\\danie\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.5.0\\tools\\Aspire.Da" +
     "shboard.exe")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "D:\\ECommerce\\ECommerce.AppHost\\obj\\")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "E:\\ECommerce\\ECommerce.AppHost\\obj\\")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aa7cb423fd97c5d8c14a834c705e4e9aba0c2e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3079d1d8de556d8786e7dba8bc73739404c0c3e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

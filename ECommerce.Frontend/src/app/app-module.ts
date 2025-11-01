@@ -23,6 +23,7 @@ import { Categories } from './pages/categories/categories';
 import { About } from './pages/about/about';
 import { Navbar } from './pages/navbar/navbar';
 import { LoginDialog } from './pages/login-dialog/login-dialog';
+import { SortPipe } from './pipes/sort/sort-pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LoginDialog } from './pages/login-dialog/login-dialog';
     Categories,
     About,
     Navbar,
-    LoginDialog
+    LoginDialog,
+    SortPipe
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj": {}
+    "E:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj": {}
   },
   "projects": {
-    "D:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj": {
+    "E:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj",
+        "projectUniqueName": "E:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj",
         "projectName": "ECommerce.ApiService",
-        "projectPath": "D:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj",
+        "projectPath": "E:\\ECommerce\\ECommerce.ApiService\\ECommerce.ApiService.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ECommerce\\ECommerce.ApiService\\obj\\",
+        "outputPath": "E:\\ECommerce\\ECommerce.ApiService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {
-                "projectPath": "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj"
+              "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {
+                "projectPath": "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj"
               }
             }
           }
@@ -54,9 +54,29 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "FastEndpoints": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -104,14 +124,14 @@
         }
       }
     },
-    "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {
+    "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
+        "projectUniqueName": "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
         "projectName": "ECommerce.ServiceDefaults",
-        "projectPath": "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
+        "projectPath": "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ECommerce\\ECommerce.ServiceDefaults\\obj\\",
+        "outputPath": "E:\\ECommerce\\ECommerce.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

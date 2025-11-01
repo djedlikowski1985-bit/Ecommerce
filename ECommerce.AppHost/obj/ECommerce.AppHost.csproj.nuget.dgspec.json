@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj": {}
+    "E:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj": {}
   },
   "projects": {
-    "D:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj": {
+    "E:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
+        "projectUniqueName": "E:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
         "projectName": "ECommerce.AppHost",
-        "projectPath": "D:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
+        "projectPath": "E:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ECommerce\\ECommerce.AppHost\\obj\\",
+        "outputPath": "E:\\ECommerce\\ECommerce.AppHost\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -67,6 +67,10 @@
               "target": "Package",
               "version": "[9.5.0, )",
               "autoReferenced": true
+            },
+            "Aspire.Hosting.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.5.2, )"
             }
           },
           "imports": [

@@ -17,5 +17,5 @@ public class ECommerce_AppHost
     /// <summary>
     /// The path to the Aspire Host project.
     /// </summary>
-    public static string ProjectPath => """D:\ECommerce\ECommerce.AppHost""";
+    public static string ProjectPath => """E:\ECommerce\ECommerce.AppHost""";
 }

@@ -1,55 +1,61 @@
+using Microsoft.EntityFrameworkCore;
+using ECommerce.ApiService.Data;
+using FastEndpoints;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add service defaults & Aspire client integrations.
 builder.AddServiceDefaults();
-
-// Add services to the container.
 builder.Services.AddProblemDetails();
-
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
 builder.Services.AddSwaggerGen();
+builder.Services.AddFastEndpoints();
+
+var postgresConnection = builder.Configuration.GetConnectionString("postgresdb");
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(postgresConnection));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await db.Database.EnsureCreatedAsync();
+
+    if (!await db.Products.AnyAsync())
+    {
+        db.Products.AddRange(new[]
+        {
+            new Product { Name = "Laptop Pro 14\"", Description = "High-performance laptop", Price = 1499.99m },
+            new Product { Name = "Wireless Mouse", Description = "Ergonomic wireless mouse", Price = 29.99m },
+            new Product { Name = "Mechanical Keyboard", Description = "Tactile mechanical keyboard", Price = 89.99m },
+            new Product { Name = "27\" 4K Monitor", Description = "Ultra HD display", Price = 399.99m },
+            new Product { Name = "USB-C Hub", Description = "Multi-port adapter", Price = 49.99m },
+            new Product { Name = "Noise-Cancelling Headphones", Description = "Over-ear ANC headphones", Price = 199.99m },
+            new Product { Name = "External SSD 1TB", Description = "Portable NVMe SSD", Price = 129.99m },
+            new Product { Name = "Smartwatch", Description = "Fitness and notifications", Price = 179.99m },
+            new Product { Name = "Bluetooth Speaker", Description = "Portable speaker", Price = 59.99m },
+            new Product { Name = "Webcam 1080p", Description = "HD webcam for video calls", Price = 39.99m }
+        });
+
+        await db.SaveChangesAsync();
+    }
+}
+
 app.UseExceptionHandler();
 
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-
-    // enable Swagger middleware and UI, pointing at the openapi JSON path
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/openapi/v1.json", "v1");
-        c.RoutePrefix = string.Empty; // uncomment to serve UI at the app root
+        c.RoutePrefix = string.Empty; // serve UI at the app root
     });
 }
 
-string[] summaries = ["Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"];
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
 app.MapDefaultEndpoints();
+app.UseFastEndpoints();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

@@ -11,3 +11,16 @@ D:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefault
 D:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\refint\ECommerce.ServiceDefaults.dll
 D:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.pdb
 D:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ref\ECommerce.ServiceDefaults.dll
+E:\ECommerce\ECommerce.ServiceDefaults\bin\Debug\net9.0\ECommerce.ServiceDefaults.deps.json
+E:\ECommerce\ECommerce.ServiceDefaults\bin\Debug\net9.0\ECommerce.ServiceDefaults.dll
+E:\ECommerce\ECommerce.ServiceDefaults\bin\Debug\net9.0\ECommerce.ServiceDefaults.pdb
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.csproj.AssemblyReference.cache
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.AssemblyInfoInputs.cache
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.AssemblyInfo.cs
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.csproj.CoreCompileInputs.cache
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.sourcelink.json
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.dll
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\refint\ECommerce.ServiceDefaults.dll
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ECommerce.ServiceDefaults.pdb
+E:\ECommerce\ECommerce.ServiceDefaults\obj\Debug\net9.0\ref\ECommerce.ServiceDefaults.dll

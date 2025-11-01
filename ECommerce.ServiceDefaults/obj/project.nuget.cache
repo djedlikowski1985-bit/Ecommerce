@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bZ0tJ4WrOTI=",
+  "dgSpecHash": "0CYCmU5VcG4=",
   "success": true,
-  "projectFilePath": "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
+  "projectFilePath": "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.ambientmetadata.application\\9.9.0\\microsoft.extensions.ambientmetadata.application.9.9.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.compliance.abstractions\\9.9.0\\microsoft.extensions.compliance.abstractions.9.9.0.nupkg.sha512",

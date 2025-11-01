@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {}
+    "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {}
   },
   "projects": {
-    "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {
+    "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
+        "projectUniqueName": "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
         "projectName": "ECommerce.ServiceDefaults",
-        "projectPath": "D:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
+        "projectPath": "E:\\ECommerce\\ECommerce.ServiceDefaults\\ECommerce.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ECommerce\\ECommerce.ServiceDefaults\\obj\\",
+        "outputPath": "E:\\ECommerce\\ECommerce.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -15,5 +15,5 @@ public class ECommerce_ApiService : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the ECommerce_ApiService project.
     /// </summary>
-    public string ProjectPath => """D:\ECommerce\ECommerce.ApiService\ECommerce.ApiService.csproj""";
+    public string ProjectPath => """E:\ECommerce\ECommerce.ApiService\ECommerce.ApiService.csproj""";
 }

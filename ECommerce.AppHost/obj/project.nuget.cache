@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "QUT/W/Q1QO0=",
+  "dgSpecHash": "x7abZRpOXZk=",
   "success": true,
-  "projectFilePath": "D:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
+  "projectFilePath": "E:\\ECommerce\\ECommerce.AppHost\\ECommerce.AppHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.5.0\\aspire.dashboard.sdk.win-x64.9.5.0.nupkg.sha512",
-    "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting\\9.5.1\\aspire.hosting.9.5.1.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting\\9.5.2\\aspire.hosting.9.5.2.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting.apphost\\9.5.0\\aspire.hosting.apphost.9.5.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting.nodejs\\9.5.1\\aspire.hosting.nodejs.9.5.1.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5.0\\aspire.hosting.orchestration.win-x64.9.5.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\aspire.hosting.postgresql\\9.5.2\\aspire.hosting.postgresql.9.5.2.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\9.0.0\\aspnetcore.healthchecks.npgsql.9.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\aspnetcore.healthchecks.uris\\9.0.0\\aspnetcore.healthchecks.uris.9.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\fractions\\7.3.0\\fractions.7.3.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
@@ -62,6 +64,7 @@
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.visualstudio.validation\\17.8.8\\microsoft.visualstudio.validation.17.8.8.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\nerdbank.streams\\2.12.87\\nerdbank.streams.2.12.87.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\polly.core\\8.6.3\\polly.core.8.6.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\semver\\3.0.0\\semver.3.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\streamjsonrpc\\2.22.11\\streamjsonrpc.2.22.11.nupkg.sha512",
@@ -69,10 +72,10 @@
     "C:\\Users\\danie\\.nuget\\packages\\system.io.hashing\\9.0.8\\system.io.hashing.9.0.8.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
-    "C:\\Users\\danie\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.9\\microsoft.windowsdesktop.app.ref.9.0.9.nupkg.sha512",
-    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.9\\microsoft.netcore.app.ref.9.0.9.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.9\\microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512",
-    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.9\\microsoft.netcore.app.host.win-x64.9.0.9.nupkg.sha512"
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.9\\microsoft.netcore.app.host.win-x64.9.0.9.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.9\\microsoft.netcore.app.ref.9.0.9.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.9\\microsoft.windowsdesktop.app.ref.9.0.9.nupkg.sha512"
   ],
   "logs": []
 }
