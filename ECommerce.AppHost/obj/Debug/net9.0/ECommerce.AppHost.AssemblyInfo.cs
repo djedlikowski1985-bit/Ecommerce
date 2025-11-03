@@ -26,7 +26,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3079d1d8de556d8786e7dba8bc73739404c0c3e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8af3801b3996abae6f1d4e4b3d4bf93784eeba6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECommerce.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

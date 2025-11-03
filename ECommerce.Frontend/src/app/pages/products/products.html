@@ -1,16 +1,24 @@
 <div class="page-container">
   <h1>Our Products</h1>
   <p>Browse our wide selection of quality products.</p>
-  <div class="products-grid">
-    @for (product of products | sort; track product.id) {
-    <div class="product-card">
-      <div class="product-info">
-        <h3>{{ product.name }}</h3>
-        <p class="product-description">{{ product.description }}</p>
-        <div class="product-created">Created: {{ product.createdOn | date : 'short' }}</div>
-        <button mat-raised-button color="primary">View Details</button>
-      </div>
+  
+  @if (loading) {
+    <div class="loader">
+      <p>Loading products...</p>
+      <!-- You can add a spinner here -->
     </div>
-    }
-  </div>
+  } @else {
+    <div class="products-grid">
+      @for (product of products | sort; track product.id) {
+        <div class="product-card">
+          <div class="product-info">
+            <h3>{{ product.name }}</h3>
+            <p class="product-description">{{ product.description }}</p>
+            <div class="product-created">Created: {{ product.createdOn | date : 'short' }}</div>
+            <button mat-raised-button color="primary">View Details</button>
+          </div>
+        </div>
+      }
+    </div>
+  }
 </div>

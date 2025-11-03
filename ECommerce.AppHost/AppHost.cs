@@ -1,6 +1,6 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var postgres = builder.AddPostgres("postgres");
+var postgres = builder.AddPostgres("postgres").WithPgAdmin(pgAdmin => pgAdmin.WithHostPort(5050));
 var postgresdb = postgres.AddDatabase("postgresdb");
 
 var apiService = builder.AddProject<Projects.ECommerce_ApiService>("apiservice")
@@ -14,7 +14,7 @@ var angular = builder.AddNpmApp(
         scriptName: "start",
         args: new[] { "--port", "4200", "--host", "127.0.0.1" }
     )
-    .WithHttpEndpoint(targetPort: 4200)
+    .WithHttpEndpoint(targetPort: 4200, port:4199)
     .WithReference(apiService);
 
 builder.Build().Run();

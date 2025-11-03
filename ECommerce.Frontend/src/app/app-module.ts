@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Angular Material imports
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -42,6 +43,7 @@ import { SortPipe } from './pipes/sort/sort-pipe';
     RouterModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,

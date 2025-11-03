@@ -10,6 +10,22 @@ builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 builder.Services.AddFastEndpoints();
 
+
+var allowedOrigins = new[]
+{
+    "http://localhost:4199"
+};
+const string CorsPolicyName = "AllowLocalDev";
+builder.Services.AddCors(options =>
+    options.AddPolicy(CorsPolicyName, policy =>
+        policy.WithOrigins(allowedOrigins)
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials()
+    )
+);
+
+
 var postgresConnection = builder.Configuration.GetConnectionString("postgresdb");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -43,6 +59,7 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.UseExceptionHandler();
+app.UseCors(CorsPolicyName);
 
 if (app.Environment.IsDevelopment())
 {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductService, Product } from '../../services/ProductService';
 
 @Component({
@@ -7,10 +7,25 @@ import { ProductService, Product } from '../../services/ProductService';
   templateUrl: './products.html',
   styleUrl: './products.css',
 })
-export class Products {
-  products: Product[];
+export class Products implements OnInit {
+  products: Product[] = [];
+  loading: boolean = true;
 
   constructor(private productService: ProductService){
-    this.products = this.productService.getProducts();
+    
+  }
+
+  ngOnInit() {
+    this.loading = true; 
+    this.productService.getProductsAsync().subscribe({
+      next: (products) => {
+        this.products = products;
+        this.loading = false;
+      },
+      error: (error) => {
+        console.error('Error fetching products:', error);
+        this.loading = false;
+      }
+    });
   }
 }
